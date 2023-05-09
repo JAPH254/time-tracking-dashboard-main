@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Css Divs</title>
+</head>
+<style>
+  .right{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    gap: 15px;
+    height: 300px;
+    width: 600px;
+    
+  }
+  .item1{
+    background-color: rgb(228, 140, 140);
+    border-radius: 20px;
+    height: 140px;
+  
+  }
+  .item2{
+    background-color: rgb(101, 211, 202);
+    border-radius: 20px;
+  }
+  .item3{
+    background-color: rgb(206, 70, 122);
+    border-radius: 20px;
+  }
+  .item4{
+    background-color: rgb(70, 247, 123);  
+    border-radius: 20px;
+  }
+    .item5{
+      background-color: rgb(180, 55, 164);
+      border-radius: 20px;
+    }
+    .item6{
+      background-color: rgb(245, 177, 75);
+      border-radius: 20px;
+    }
+    .left{
+      background-color: rgb(13, 13, 92);
+      height: 400px;
+      width: 200px;
+      border-radius: 20px;
+    }
+    .container{
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 15px;
+      justify-content: center;
+      padding:100px;
+      
+      
+    }
+    .upper{
+      background-color: rgb(117, 117, 226);
+      height: 300px;
+      width: 200px;
+      color: rgb(236, 221, 221);
+      border-radius: 20px;
+    }
+    .img1 img{
+      height: 50px;
+      width: 50px;
+      margin: 5px;
+      border: 5px solid white;
+      border-radius: 100%;
+      
+    }
+    .foot{
+      display: grid;
+      grid-row: auto auto auto;
+      gap: 10px;
+      font-family: 'Times New Roman', Times, serif;
+      color: white;
+      margin: 20px;
+    }
+    .col1{
+      background-color: blue;
+      border-radius: 20px;
+      height: 156px;
+      color: rgb(228, 233, 238);
+      overflow: ;
+      
+
+    }
+    .work img{
+      height: 50px;
+      width: 50px;
+      float: right;
+      margin-left: 125px;
+     
+    }
+    .ellipses img{
+      position: absolute;
+      top: 8px;
+      right: 16px;
+
+    }
+    .work{
+      overflow: ;
+    }
+    
+</style>
+<body style="background-color: rgb(3, 3, 51);">
+  <div class="container">
+    <div class="left">
+      <div class="upper">
+        <div class="img1"><img src="images/image-jeremy.png" alt=""></div><br><br>
+      <div style="margin: 20px;">Report for <br><br> <b>Jeremy <br> Ronson</b></div>
+      </div>
+      <div class="foot">
+      <div>Daily</div>
+      <div>Weekly</div>
+      <div>Monthly</div>
+    </div>
+    </div>
+    <div class="right">
+      <div class="item1">
+       
+        <div class="work"><img src="images/icon-work.svg" alt=""></div>
+        <br><br>
+        <div class="col1">
+          <div class="ellipses" ><img src="images/icon-ellipsis.svg" alt=""></div>
+          <p style="margin: 0px;align-items:right;><b>...</b></p>
+          <p style="margin: 10px;"><br><b>Work </b></p>
+          <p style="font-weight: bold;font-size:xx-large;align-items: center;margin: 20px;"><b>32hrs</b></p>
+          <p><b>Last Week-36hrs</b></p>
+        </div>
+      </div>
+      <div class="item2">
+        <div class="work"><img src="images/icon-play.svg" alt=""></div>
+        <br><br>
+        <div class="col1">
+          <p style="margin: 0px;align-items:right;><b>...</b></p>
+          <p style="margin: 10px;"><br><b>Play </b></p>
+          <p style="font-weight: bold;font-size:xx-large;align-items: center;margin: 20px;"><b>10hrs</b></p>
+          <p><b>Last Week-8hrs</b></p>
+        </div>
+
+      </div>
+      <div class="item3">
+        <div class="work"><img src="images/icon-study.svg" alt=""></div>
+        <br><br>
+        <div class="col1">
+          <p style="margin: 0px;align-items:right;><b>...</b></p>
+          <p style="margin: 10px;"><br><b>Study </b></p>
+          <p style="font-weight: bold;font-size:xx-large;align-items: center;margin: 20px;"><b>4hrs</b></p>
+          <p><b>Last Week-7hrs</b></p>
+        </div>
+      </div>
+      <div class="item4">
+        <div class="work"><img src="images/icon-exercise.svg" alt=""></div>
+        <br><br>
+        <div class="col1">
+          <p style="margin: 0px;align-items:right;><b>...</b></p>
+          <p style="margin: 10px;"><br><b>Exercise </b></p>
+          <p style="font-weight: bold;font-size:xx-large;align-items: center;margin: 20px;"><b>5hrs</b></p>
+          <p><b>Last Week-5hrs</b></p>
+        </div>
+      </div>
+      <div class="item5">
+        <div class="work"><img src="images/icon-social.svg" alt=""></div>
+        <br><br>
+        <div class="col1">
+          <p style="margin: 0px;align-items:right;><b>...</b></p>
+          <p style="margin: 10px;"><br><b>Social </b></p>
+          <p style="font-weight: bold;font-size:xx-large;align-items: center;margin: 20px;"><b>5hrs</b></p>
+          <p><b>Last Week-10hrs</b></p>
+        </div>
+      </div>
+      <div class="item6">
+        <div class="work"><img src="images/icon-self-care.svg" alt=""></div>
+        <br><br>
+        <div class="col1">
+          <p style="margin: 0px;align-items:right;><b>...</b></p>
+          <p style="margin: 10px;"><br><b>Self care </b></p>
+          <p style="font-weight: bold;font-size:xx-large;align-items: center;margin: 20px;"><b>2hrs</b></p>
+          <p><b>Last Week-2hrs</b></p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>
